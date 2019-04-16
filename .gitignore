@@ -1,2 +1,5 @@
 # Virtual Environment
 venv/*
+
+# Editor settings
+.vscode/*
