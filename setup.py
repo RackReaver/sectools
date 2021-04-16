@@ -1,5 +1,4 @@
-from sys import version
-from setuptools import setup
+from setuptools import setup, find_packages
 import versioneer
 
 # Read the contents of README file
@@ -35,5 +34,6 @@ setup(
         'Programming Language :: Python :: 3.7'
     ],
     include_package_data=True,
-    install_requirements=[]
+    install_requirements=[],
+    packages=find_packages()
 )
