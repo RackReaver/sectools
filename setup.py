@@ -6,6 +6,9 @@ this_directory = path.abspath(path.dirname(__file__))
 with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
     README = f.read()
 
+# Extract description from line three of README.md
+description = README.split('\n')[2].strip()
+
 
 setup(
     name='sectools',
@@ -14,7 +17,7 @@ setup(
     license='Apache License',
     author='Matt Ferreira',
     author_email='rackreaver@gmail.com',
-    description='Collection of security tools that increase productive and help streamline workflows.',
+    description=description,
     long_description=README,
     long_description_content_type='text/markdown',
     classifiers=[
