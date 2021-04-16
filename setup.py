@@ -1,4 +1,6 @@
+from sys import version
 from setuptools import setup
+import versioneer
 
 # Read the contents of README file
 from os import path
@@ -12,7 +14,8 @@ description = README.split('\n')[2].strip()
 
 setup(
     name='sectools',
-    version='0.0.1',
+    version=versioneer.get_version(),
+    cmdclass=versioneer.get_cmdclass(),
     url='https://github.com/RackReaver/sectools',
     license='Apache License',
     author='Matt Ferreira',
