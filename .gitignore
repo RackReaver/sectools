@@ -7,3 +7,4 @@ venv/*
 
 # Temp files
 __pycache__
+*.egg-info
