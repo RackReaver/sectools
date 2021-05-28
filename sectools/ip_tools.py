@@ -20,3 +20,4 @@ def extract_ips(text):
     ips = ip_addr_re.findall(text)
     
     return ips
+    
