@@ -1,0 +1,10 @@
+# Virtual Environment
+venv/*
+
+# Editor settings
+.vscode/*
+
+
+# Temp files
+__pycache__
+*.egg-info
